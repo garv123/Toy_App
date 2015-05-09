@@ -1,20 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'microposts/index'
-
-  get 'microposts/show'
-
-  get 'microposts/create'
-
-  get 'microposts/destroy'
-
-  get 'microposts/new'
-
-  get 'microposts/update'
-
-  get 'microposts/edit'
-
   resources :users
+  resources :microposts
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
